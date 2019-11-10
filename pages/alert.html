@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <title>Further </title>
+
+    <!-- further Style -->
+    <link rel="stylesheet" href="../css/further.css" />
+    <link rel="stylesheet" href="../css/further-grid.css" />
+
+    <!-- Font-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="white">
+        <div class="title-nav left">
+            <img width="40px" src="../icon/icon.png" />
+            <label class="title txt-black txt-big"> Further<label class="txt-blue">Doc</label> </label>
+        </div>
+    </nav>
+
+    <div class="container txt-black">
+
+        <div class="row">
+            <h3> Alert </h3>
+            <p class="txt-medium"> Further has a modern alert. Press the button to see the alert.
+            </p>
+            <div class="col l1 s6">
+                <button class="btn btn-success" onClick="message('good job!',2000)">message 1 </button>
+            </div>
+            <div class="col l1 s6">
+                <button class="btn btn-danger" onClick="message('password or email wrong!',7000)">message 2</button>
+            </div>
+            <div class="col l1 s6">
+                <button class="btn btn-warning " onClick="message('Take care',200)">message 3 </button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Scripts Load -->
+    <script src="../js/further.js"></script>
+</body>
+
+
+</html>

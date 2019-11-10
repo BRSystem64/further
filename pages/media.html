@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="icon/icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <title>Further </title>
+
+    <!-- further Style -->
+    <link rel="stylesheet" href="../css/further.css" />
+    <link rel="stylesheet" href="../css/further-grid.css" />
+
+    <!-- Font-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="white">
+        <div class="title-nav left">
+            <img width="40px" src="../icon/icon.png" />
+            <label class="title txt-black txt-big"> Further<label class="txt-blue">Doc</label> </label>
+        </div>
+    </nav>
+
+    <div class="container txt-black">
+
+        <div class="row">
+            <h3> Image </h3>
+            <p class="txt-medium"> Further has a modern and beautiful image. Hover the image and explore it!
+
+                <div class=" col l3 s16 ">
+                    <img src="../icon/image1.jpg" class="img" alt="Img" class="img">
+                </div>
+                <div class=" col l3 s16 ">
+                    <img src="../icon/image2.jpg" class="img" alt="Img Street" class="img">
+                </div>
+
+                <div class="col l3 s12 img-container">
+                    <img class="img" src="../icon/image3.jpg" alt="Img" class="img">
+                    <div class="overlay">
+                        <div class="text">Hello World!</div>
+                    </div>
+                </div>
+                <div class="col l3 s12 img-container">
+                    <img class="img" src="../icon/image4.jpg" alt="Img" class="img">
+                    <div class="overlay">
+                        <div class="text">Inner Peace!</div>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+            <div class=" col l3 s16 ">
+                <img src="../icon/image1.jpg" onClick="openImg(this)" class="img" alt="Beautiful Plant">
+            </div>
+        </div>
+
+        <div class="row">
+            <h3> Audio </h3>
+            <p class="txt-medium"> Further has a simple audio control.
+                <div class=" col l3 s12 ">
+                    <audio
+                        src="https://raw.githubusercontent.com/diegoeis/tableless-static-images/master/2010/12/LouisArmstrongAllHisStars-StruttinWithSomeBarbecue.mp3"
+                        controls></audio>
+                </div>
+
+                <audio class="hidden" id="music">
+                    <source
+                        src="https://raw.githubusercontent.com/diegoeis/tableless-static-images/master/2010/12/LouisArmstrongAllHisStars-StruttinWithSomeBarbecue.mp3"
+                        type="audio/mp3">
+                    </source>
+                </audio>
+
+        </div>
+
+        <div class="row">
+            <div class=" col l1 s16 ">
+                <button class="btn btn-dark" onClick="playMusic()">Play</button>
+            </div>
+            <div class=" col l1 s16 ">
+                <button class="btn btn-dark" onClick="pauseMusic()">stop</button>
+            </div>
+            <div class=" col l1 s16 ">
+                <button class="btn btn-dark" onClick="loadMusic()">load</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Scripts Load -->
+    <script src="../js/further.js"></script>
+</body>
+
+
+</html>
